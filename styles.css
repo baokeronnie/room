@@ -1,0 +1,157 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(to left, black 0%, grey 50%, white 100%);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+.header-content {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 100px;
+    width: 140px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    flex: 1;
+    text-align: center;
+}
+
+.logout-button {
+    background-color: light grey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+main {
+    padding: 20px;
+    background: linear-gradient(to right, black 0%, grey 50%, white 100%);
+
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+}
+
+.content-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* PDF Box Styles */
+.pdf-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pdf-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.pdf-box i {
+    font-size: 50px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.pdf-box a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.pdf-box a:hover {
+    color: #007BFF;
+}
+
+/* Video Box Styles */
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-box {
+    width: calc(100% / 2 - 20px);
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-box p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content-item {
+        width: calc(100% - 40px);
+    }
+
+    .video-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .content-item h2 {
+        font-size: 1.2em;
+    }
+
+    .video-box p {
+        font-size: 0.9em;
+    }
+}
